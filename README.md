@@ -176,9 +176,22 @@ If you find MPNet useful in your research, please cite our paper:
 }
 ```
 
+
 ## Acknowledgments
 
-This implementation builds upon research on deep Riemannian networks and SPD matrix learning. We acknowledge the contributions of prior work on SPDNet and Riemannian geometry-based EEG decoding.
+The implementation of MPNet was developed with reference to the **GREEN** framework and its publicly available codebase:
+
+**Paillard, J., Hipp, J. F., & Engemann, D. A. (2025).** GREEN: A lightweight architecture using learnable wavelets and Riemannian geometry for biomarker exploration with EEG signals. *Patterns*, 6(3), 101182.
+
+- **Paper:** https://doi.org/10.1016/j.patter.2025.101182
+- **Code:** https://github.com/Roche/neuro-green
+
+We sincerely thank the authors of GREEN for making their implementation publicly available. Their work provides valuable references for implementing Riemannian neural networks for EEG analysis.
+
+Building upon related research in deep Riemannian learning, MPNet introduces a manifold node pooling mechanism to aggregate multi-rhythm, time-windowed SPD representations into a compact fusion node, reducing the computational overhead of subsequent Riemannian processing.
+
+We also acknowledge the foundational work on SPDNet and Riemannian geometry-based EEG decoding.
+
 
 ## Contact
 
